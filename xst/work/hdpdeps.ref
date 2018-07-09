@@ -1,0 +1,10 @@
+V3 5
+FL "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases - Copy.vhd" 2018/07/09.07:14:07 P.20131013
+FL "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.vhd" 2018/07/09.07:14:07 P.20131013
+FL "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases211.vhd" 2018/07/09.12:03:50 P.20131013
+EN work/phases 1531152249 \
+      FL "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases211.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/MATH_REAL 1381692182
+AR work/phases/Behavioral 1531152250 \
+      FL "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases211.vhd" \
+      EN work/phases 1531152249

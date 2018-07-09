@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\DWWW\Documents\Embedded Work\SimonSays\phases.ncd
+OUTFILE=C:\Users\DWWW\Documents\Embedded Work\SimonSays\phases.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-4tq144
+WORKINGDIR=C:\Users\DWWW\Documents\Embedded Work\SimonSays
+LICENSE=WebPack
+USER_INFO=211548241_0_0_157

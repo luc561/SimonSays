@@ -1,0 +1,261 @@
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
+xst -intstyle ise -ifn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.xst" -ofn "C:/Users/DWWW/Documents/Embedded Work/SimonSays/phases.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 "phases.ngc" phases.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o phases_map.ncd phases.ngd phases.pcf 
+par -w -intstyle ise -ol high -t 1 phases_map.ncd phases.ncd phases.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml phases.twx phases.ncd -o phases.twr phases.pcf -ucf simon.ucf 
+bitgen -intstyle ise -f phases.ut phases.ncd 
