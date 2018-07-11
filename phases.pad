@@ -1,7 +1,7 @@
-Release 14.7 - par P.20131013 (nt64)
+Release 14.7 - par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Jul 09 12:05:11 2018
+Wed Jul 11 17:49:31 2018
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -139,7 +139,7 @@ P117|SevenD<0>|IOB|IO_L03N_0|OUTPUT|LVTTL|0|8|FAST|NONE**|||LOCATED|NO|NONE|
 P118|||GND||||||||||||
 P119|||VCCO_0|||0|||||3.30||||
 P120|Enable1|IOB|IO_L05P_0|OUTPUT|LVTTL|0|8|FAST|NONE**|||LOCATED|NO|NONE|
-P121||DIFFSTB|IO_L05N_0|UNUSED||0|||||||||
+P121|Enable2|IOB|IO_L05N_0|OUTPUT|LVTTL|0|8|FAST|NONE**|||LOCATED|NO|NONE|
 P122|||VCCINT||||||||1.2||||
 P123||IBUF|IP_0/VREF_0|UNUSED||0|||||||||
 P124||DIFFMTB|IO_L06P_0/GCLK4|UNUSED||0|||||||||

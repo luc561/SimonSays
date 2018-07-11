@@ -39,6 +39,7 @@ entity phases is
 			  clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            Enable1 : out  STD_LOGIC;
+			  Enable2 : out  STD_LOGIC;
            SevenD : out  STD_LOGIC_VECTOR (7 downto 0);
 			SD : out  STD_LOGIC_VECTOR (7 downto 0);
 		
@@ -53,7 +54,7 @@ type statetype is (preone, pretwo, prethree, clear, zero, one, two, win, over, z
 signal state, nextstate: statetype;
 
 begin
-Enable1 <= '0';
+
 --state register
 
 process(clk, reset, button1, button2, button3, button4, button5) 
@@ -68,6 +69,8 @@ when preone =>
 if i<5000000 then
 i:=i+1;
 elsif i= 5000000 then
+Enable1 <= '0';
+Enable2 <= '1';
 SevenD <= "11111001";
 state <= pretwo;
 i:=0;
@@ -79,6 +82,8 @@ when pretwo =>
 if i<5000000 then
 i:=i+1;
 elsif i=5000000 then
+Enable1 <= '0';
+Enable2 <= '1';
 SevenD <= "10100100";
 state <= prethree;
 i:=0;
@@ -90,10 +95,11 @@ when prethree =>
 if i<5000000 then
 i:=i+1;
 elsif i=5000000 then
+Enable1 <= '0';
+Enable2 <= '1';
 SevenD <= "10110000";
-i:=0;
 state <=clear;
-
+i:=0;
 end if;
 
 
@@ -101,19 +107,68 @@ when clear =>
 if i<5000000 then
 i:=i+1;
 elsif i=5000000 then
+Enable2 <= '0';
+Enable1 <= '1';
+SevenD <= "10000010";
+i:=0;
+end if;
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+Enable2 <= '1';
+Enable1 <= '0';
 SevenD <= "11000000";
 i:=0;
-state  <=zero;
 end if;
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+Enable1 <= '1';  
+i:=0;
+end if;
+state  <=zero;
+
 
 when zero =>
+Enable2 <= '0';
+Enable1 <= '1';
+SevenD <= "10000010";
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+Enable2 <= '1';
+Enable1 <= '0';
+SevenD <= "11000000";
+i:=0;
+end if;
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+i:=0;
+end if;
 if(button1 ='0') then state<=zerowaitstate;
 elsif(button2='0') or (button3='0')then state<=over;
 elsif(button1='1') then state<=zero;
 end if;
 
 when zerowaitstate =>
---counter <= "11000000";
+Enable2 <= '0';
+Enable1 <= '1';
+SevenD <= "10000010";
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+Enable2 <= '1';
+Enable1 <= '0';
+SevenD <= "11000000";
+i:=0;
+end if;
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+Enable1 <= '1'; 
+i:=0;
+end if;
 if(button1 ='1') then state<=one;
 else
 state <=zerowaitstate;
@@ -121,14 +176,46 @@ end if;
 
 
 when one =>
---counter <= "11000000";
+Enable2 <= '0';
+Enable1 <= '1';
+SevenD <= "10000010";
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+Enable2 <= '1';
+Enable1 <= '0';
+SevenD <= "11000000";
+i:=0;
+end if;
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+Enable1 <= '1'; 
+i:=0;
+end if;
 if(button2='0') then state<=onewaitstate;
 elsif(button3='0') or (button1 ='0')then state<=over;
 elsif (button2='1') then state<=one;
 end if;
 
 when onewaitstate =>
---counter <= "11000000";
+Enable2 <= '0';
+Enable1 <= '1';
+SevenD <= "10000010";
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+Enable2 <= '1';
+Enable1 <= '0';
+SevenD <= "11000000";
+i:=0;
+end if;
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+Enable1 <= '1'; 
+i:=0;
+end if;
 if(button2 ='1') then state<=two;
 else
 state <=onewaitstate;
@@ -136,25 +223,62 @@ end if;
 
 
 when two =>
---counter <= "11000000";
+Enable2 <= '0';
+Enable1 <= '1';
+SevenD <= "10000010";
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+Enable2 <= '1';
+Enable1 <= '0';
+SevenD <= "11000000";
+i:=0;
+end if;
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+Enable1 <= '1'; 
+i:=0;
+end if;
 if(button3='0') then state<=twowaitstate;
 elsif(button2='0') or (button1='0')then state<=over;
 elsif (button3='1') then state<=two;
 end if;
 
 when twowaitstate =>
---counter <= "11000000";
+Enable2 <= '0';
+Enable1 <= '1';
+SevenD <= "10000010";
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+Enable2 <= '1';
+Enable1 <= '0';
+SevenD <= "11000000";
+i:=0;
+end if;
+if i<5000000 then
+i:=i+1;
+elsif i=5000000 then
+Enable1 <= '1'; 
+i:=0;
+end if;
 if(button3='1') then state<=win;
 else
 state <=twowaitstate;
 end if;
 
 when over =>
+Enable1 <= '0';
+Enable2 <= '0';
 SevenD <= "10001001";
+
 state <= over;
 
 
 when win =>
+Enable1 <= '0';
+Enable2 <= '0';
 SevenD <= "11100011";
 state <= win;
 

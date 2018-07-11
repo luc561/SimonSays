@@ -1,5 +1,5 @@
 ###Clock
-	NET "clk"	LOC = P129 | IOSTANDARD = LVTTL | PERIOD = 1 MHz;
+	NET "clk"	LOC = P129 | IOSTANDARD = LVTTL | PERIOD = 2 MHz;
 ############Input push buttons
 	NET "reset"	LOC = P80 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST | PULLUP;
 	NET "button1"	LOC = P79 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST | PULLUP;
@@ -22,3 +22,4 @@
 	NET "SevenD[0]"	LOC = P117 | IOSTANDARD =	LVTTL | DRIVE = 8 | SLEW = FAST;
 	
 	NET "Enable1"	LOC = P120 | IOSTANDARD =	LVTTL | DRIVE = 8 | SLEW = FAST;
+	NET "Enable2"	LOC = P121 | IOSTANDARD =	LVTTL | DRIVE = 8 | SLEW = FAST;
