@@ -1,8 +1,16 @@
 INTSTYLE=ise
+<<<<<<< HEAD
 INFILE=C:\Users\DWWW\Downloads\SimonSays-master\phases.ncd
 OUTFILE=C:\Users\DWWW\Downloads\SimonSays-master\phases.bit
 FAMILY=Spartan3A and Spartan3AN
 PART=xc3s50a-4tq144
 WORKINGDIR=C:\Users\DWWW\Downloads\SimonSays-master
+=======
+INFILE=C:\Users\Krist\Documents\FPGA Projects\SimonSays-master\phases.ncd
+OUTFILE=C:\Users\Krist\Documents\FPGA Projects\SimonSays-master\phases.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-4tq144
+WORKINGDIR=C:\Users\Krist\Documents\FPGA Projects\SimonSays-master
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 LICENSE=WebPack
-USER_INFO=211548241_0_0_157
+USER_INFO=211546397_0_0_619

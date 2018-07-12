@@ -1,16 +1,16 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.29 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.29 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: phases.prj
 
@@ -104,7 +104,11 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+<<<<<<< HEAD
 Compiling vhdl file "C:/Users/DWWW/Downloads/SimonSays-master/phases211.vhd" in Library work.
+=======
+Compiling vhdl file "C:/Users/Krist/Documents/FPGA Projects/SimonSays-master/phases211.vhd" in Library work.
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 Entity <phases> compiled.
 Entity <phases> (Architecture <behavioral>) compiled.
 
@@ -128,15 +132,25 @@ Entity <phases> analyzed. Unit <phases> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <phases>.
+<<<<<<< HEAD
     Related source file is "C:/Users/DWWW/Downloads/SimonSays-master/phases211.vhd".
+=======
+    Related source file is "C:/Users/Krist/Documents/FPGA Projects/SimonSays-master/phases211.vhd".
+WARNING:Xst:1306 - Output <SD> is never assigned.
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 WARNING:Xst:647 - Input <button4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <button5> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1780 - Signal <nextstate> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <bcd2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
+<<<<<<< HEAD
     | States             | 11                                             |
     | Transitions        | 29                                             |
+=======
+    | States             | 12                                             |
+    | Transitions        | 30                                             |
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
     | Inputs             | 5                                              |
     | Outputs            | 17                                             |
     | Clock              | clk                       (rising_edge)        |
@@ -147,6 +161,7 @@ WARNING:Xst:653 - Signal <bcd2> is used but never assigned. This sourceless sign
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
+<<<<<<< HEAD
     Found 4x2-bit ROM for signal <Seven_Segment_Enable>.
     Found 16x8-bit ROM for signal <Seven_Segment_Display_output$mux0000>.
     Found 32-bit 4-to-1 multiplexer for signal <bcd>.
@@ -166,6 +181,38 @@ WARNING:Xst:653 - Signal <bcd2> is used but never assigned. This sourceless sign
 	inferred   1 Adder/Subtractor(s).
 	inferred   1 Comparator(s).
 	inferred  32 Multiplexer(s).
+=======
+    Found 1-bit register for signal <Enable1>.
+    Found 1-bit register for signal <Enable2>.
+    Found 8-bit register for signal <SevenD>.
+    Found 32-bit register for signal <i>.
+    Found 32-bit adder for signal <i$add0000> created at line 253.
+    Found 32-bit adder for signal <i$addsub0000> created at line 116.
+    Found 32-bit comparator less for signal <i$cmp_lt0000> created at line 115.
+    Found 32-bit comparator less for signal <i$cmp_lt0001> created at line 123.
+    Found 32-bit comparator less for signal <i$cmp_lt0002> created at line 144.
+    Found 32-bit comparator less for signal <i$cmp_lt0003> created at line 166.
+    Found 32-bit comparator less for signal <i$cmp_lt0004> created at line 190.
+    Found 32-bit comparator less for signal <i$cmp_lt0005> created at line 213.
+    Found 32-bit comparator less for signal <i$cmp_lt0006> created at line 237.
+    Found 32-bit comparator less for signal <i$cmp_lt0007> created at line 260.
+    Found 32-bit 4-to-1 multiplexer for signal <i$mux0000> created at line 107.
+    Found 32-bit 4-to-1 multiplexer for signal <i$mux0002> created at line 115.
+    Found 32-bit 4-to-1 multiplexer for signal <i$mux0004> created at line 136.
+    Found 32-bit 4-to-1 multiplexer for signal <i$mux0006> created at line 158.
+    Found 32-bit 4-to-1 multiplexer for signal <i$mux0008> created at line 182.
+    Found 32-bit 4-to-1 multiplexer for signal <i$mux0010> created at line 205.
+    Found 32-bit 4-to-1 multiplexer for signal <i$mux0012> created at line 229.
+    Found 32-bit 4-to-1 multiplexer for signal <i$mux0014> created at line 252.
+    Found 32-bit adder for signal <i$share0000> created at line 67.
+    Found 32-bit comparator less for signal <state$cmp_lt0000> created at line 69.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  42 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred 256 Multiplexer(s).
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 Unit <phases> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -174,6 +221,7 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
+<<<<<<< HEAD
 # ROMs                                                 : 2
  16x8-bit ROM                                          : 1
  4x2-bit ROM                                           : 1
@@ -190,6 +238,18 @@ Macro Statistics
  32-bit comparator less                                : 1
 # Multiplexers                                         : 1
  32-bit 4-to-1 multiplexer                             : 1
+=======
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Registers                                            : 4
+ 1-bit register                                        : 2
+ 32-bit register                                       : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 9
+ 32-bit comparator less                                : 9
+# Multiplexers                                         : 8
+ 32-bit 4-to-1 multiplexer                             : 8
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 
 =========================================================================
 
@@ -221,6 +281,7 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
+<<<<<<< HEAD
 # ROMs                                                 : 2
  16x8-bit ROM                                          : 1
  4x2-bit ROM                                           : 1
@@ -235,6 +296,16 @@ Macro Statistics
  32-bit comparator less                                : 1
 # Multiplexers                                         : 1
  32-bit 4-to-1 multiplexer                             : 1
+=======
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Registers                                            : 42
+ Flip-Flops                                            : 42
+# Comparators                                          : 9
+ 32-bit comparator less                                : 9
+# Multiplexers                                         : 8
+ 32-bit 4-to-1 multiplexer                             : 8
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 
 =========================================================================
 
@@ -250,7 +321,11 @@ Optimizing unit <phases> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
+<<<<<<< HEAD
 Found area constraint ratio of 100 (+ 5) on block phases, actual ratio is 16.
+=======
+Found area constraint ratio of 100 (+ 5) on block phases, actual ratio is 37.
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 
 Final Macro Processing ...
 
@@ -258,8 +333,13 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
+<<<<<<< HEAD
 # Registers                                            : 82
  Flip-Flops                                            : 82
+=======
+# Registers                                            : 45
+ Flip-Flops                                            : 45
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 
 =========================================================================
 
@@ -285,6 +365,7 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
+<<<<<<< HEAD
 # IOs                              : 18
 
 Cell Usage :
@@ -306,6 +387,31 @@ Cell Usage :
 #      FDC                         : 10
 #      FDE                         : 70
 #      FDP                         : 1
+=======
+# IOs                              : 26
+
+Cell Usage :
+# BELS                             : 882
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 35
+#      LUT2                        : 40
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 107
+#      LUT3_D                      : 27
+#      LUT3_L                      : 25
+#      LUT4                        : 244
+#      LUT4_D                      : 7
+#      LUT4_L                      : 47
+#      MUXCY                       : 240
+#      MUXF5                       : 5
+#      VCC                         : 1
+#      XORCY                       : 96
+# FlipFlops/Latches                : 45
+#      FDC                         : 4
+#      FDE                         : 41
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 15
@@ -318,10 +424,17 @@ Device utilization summary:
 
 Selected Device : 3s50atq144-4 
 
+<<<<<<< HEAD
  Number of Slices:                      108  out of    704    15%  
  Number of Slice Flip Flops:             82  out of   1408     5%  
  Number of 4 input LUTs:                205  out of   1408    14%  
  Number of IOs:                          18
+=======
+ Number of Slices:                      272  out of    704    38%  
+ Number of Slice Flip Flops:             45  out of   1408     3%  
+ Number of 4 input LUTs:                539  out of   1408    38%  
+ Number of IOs:                          26
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
  Number of bonded IOBs:                  16  out of    108    14%  
  Number of GCLKs:                         1  out of     24     4%  
 
@@ -346,8 +459,12 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
+<<<<<<< HEAD
 clk                                | BUFGP                  | 81    |
 refresh_clk                        | NONE(digit_sel_0)      | 1     |
+=======
+clk                                | BUFGP                  | 45    |
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -363,9 +480,15 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
+<<<<<<< HEAD
    Minimum period: 7.048ns (Maximum Frequency: 141.884MHz)
    Minimum input arrival time before clock: 3.724ns
    Maximum output required time after clock: 7.615ns
+=======
+   Minimum period: 19.275ns (Maximum Frequency: 51.881MHz)
+   Minimum input arrival time before clock: 5.803ns
+   Maximum output required time after clock: 7.797ns
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -374,11 +497,19 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
+<<<<<<< HEAD
   Clock period: 7.048ns (frequency: 141.884MHz)
   Total number of paths / destination ports: 4978 / 82
 -------------------------------------------------------------------------
 Delay:               7.048ns (Levels of Logic = 16)
   Source:            i_5 (FF)
+=======
+  Clock period: 19.275ns (frequency: 51.881MHz)
+  Total number of paths / destination ports: 7136104 / 45
+-------------------------------------------------------------------------
+Delay:               19.275ns (Levels of Logic = 37)
+  Source:            i_6 (FF)
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
   Destination:       i_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
@@ -387,7 +518,11 @@ Delay:               7.048ns (Levels of Logic = 16)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
+<<<<<<< HEAD
      FDE:C->Q              4   0.591   0.730  i_5 (i_5)
+=======
+     FDE:C->Q             12   0.591   1.104  i_6 (i_6)
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
      LUT1:I0->O            1   0.648   0.000  Mcompar_state_cmp_lt0000_cy<0>_rt (Mcompar_state_cmp_lt0000_cy<0>_rt)
      MUXCY:S->O            1   0.632   0.000  Mcompar_state_cmp_lt0000_cy<0> (Mcompar_state_cmp_lt0000_cy<0>)
      MUXCY:CI->O           1   0.065   0.000  Mcompar_state_cmp_lt0000_cy<1> (Mcompar_state_cmp_lt0000_cy<1>)
@@ -400,6 +535,7 @@ Delay:               7.048ns (Levels of Logic = 16)
      MUXCY:CI->O           1   0.065   0.000  Mcompar_state_cmp_lt0000_cy<8> (Mcompar_state_cmp_lt0000_cy<8>)
      MUXCY:CI->O           1   0.065   0.000  Mcompar_state_cmp_lt0000_cy<9> (Mcompar_state_cmp_lt0000_cy<9>)
      MUXCY:CI->O           1   0.065   0.000  Mcompar_state_cmp_lt0000_cy<10> (Mcompar_state_cmp_lt0000_cy<10>)
+<<<<<<< HEAD
      MUXCY:CI->O           1   0.065   0.000  Mcompar_state_cmp_lt0000_cy<11> (Mcompar_state_cmp_lt0000_cy<11>)
      MUXCY:CI->O           9   0.269   0.900  Mcompar_state_cmp_lt0000_cy<12> (Mcompar_state_cmp_lt0000_cy<12>)
      LUT2_D:I1->O         15   0.643   1.020  i_mux0000<0>21 (N5)
@@ -492,16 +628,99 @@ Offset:              7.169ns (Levels of Logic = 2)
     ----------------------------------------
     Total                      7.169ns (5.867ns logic, 1.302ns route)
                                        (81.8% logic, 18.2% route)
+=======
+     MUXCY:CI->O           1   0.269   0.452  Mcompar_state_cmp_lt0000_cy<11> (Mcompar_state_cmp_lt0000_cy<11>)
+     LUT3_D:I2->O        174   0.648   1.310  Mcompar_state_cmp_lt0000_cy<13>1 (Mcompar_state_cmp_lt0000_cy<13>)
+     LUT4_D:I3->O          9   0.648   0.900  i_mux0000<9>1 (i_mux0000<9>)
+     LUT2:I1->O            1   0.643   0.000  Mcompar_i_cmp_lt0000_lut<2> (Mcompar_i_cmp_lt0000_lut<2>)
+     MUXCY:S->O            1   0.632   0.000  Mcompar_i_cmp_lt0000_cy<2> (Mcompar_i_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_i_cmp_lt0000_cy<3> (Mcompar_i_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_i_cmp_lt0000_cy<4> (Mcompar_i_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_i_cmp_lt0000_cy<5> (Mcompar_i_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_i_cmp_lt0000_cy<6> (Mcompar_i_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_i_cmp_lt0000_cy<7> (Mcompar_i_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_i_cmp_lt0000_cy<8> (Mcompar_i_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_i_cmp_lt0000_cy<9> (Mcompar_i_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_i_cmp_lt0000_cy<10> (Mcompar_i_cmp_lt0000_cy<10>)
+     MUXCY:CI->O           1   0.269   0.452  Mcompar_i_cmp_lt0000_cy<11> (Mcompar_i_cmp_lt0000_cy<11>)
+     LUT3_D:I2->O         68   0.648   1.306  Mcompar_i_cmp_lt0000_cy<13>1 (Mcompar_i_cmp_lt0000_cy<13>)
+     LUT4:I2->O            4   0.648   0.667  Mmux_i_mux0002111 (i_mux0002<19>)
+     LUT2:I1->O            1   0.643   0.000  Mcompar_i_cmp_lt0001_lut<8> (Mcompar_i_cmp_lt0001_lut<8>)
+     MUXCY:S->O            1   0.632   0.000  Mcompar_i_cmp_lt0001_cy<8> (Mcompar_i_cmp_lt0001_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_i_cmp_lt0001_cy<9> (Mcompar_i_cmp_lt0001_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_i_cmp_lt0001_cy<10> (Mcompar_i_cmp_lt0001_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_i_cmp_lt0001_cy<11> (Mcompar_i_cmp_lt0001_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_i_cmp_lt0001_cy<12> (Mcompar_i_cmp_lt0001_cy<12>)
+     MUXCY:CI->O          35   0.269   1.266  Mcompar_i_cmp_lt0001_cy<13> (Mcompar_i_cmp_lt0001_cy<13>)
+     LUT4_D:I3->O         15   0.648   1.020  i_mux0016<11>199 (N01)
+     LUT4:I3->O            1   0.648   0.000  i_mux0016<8>50 (i_mux0016<8>)
+     FDE:D                     0.252          i_8
+    ----------------------------------------
+    Total                     19.275ns (10.798ns logic, 8.477ns route)
+                                       (56.0% logic, 44.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 57 / 44
+-------------------------------------------------------------------------
+Offset:              5.803ns (Levels of Logic = 5)
+  Source:            button2 (PAD)
+  Destination:       state_FSM_FFd4 (FF)
+  Destination Clock: clk rising
+
+  Data Path: button2 to state_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.849   0.812  button2_IBUF (button2_IBUF)
+     LUT4:I0->O            1   0.648   0.423  state_FSM_FFd4-In9 (state_FSM_FFd4-In9)
+     LUT4:I3->O            1   0.648   0.452  state_FSM_FFd4-In22 (state_FSM_FFd4-In22)
+     LUT4:I2->O            1   0.648   0.423  state_FSM_FFd4-In124_SW0 (N139)
+     LUT4:I3->O            1   0.648   0.000  state_FSM_FFd4-In124 (state_FSM_FFd4-In)
+     FDC:D                     0.252          state_FSM_FFd4
+    ----------------------------------------
+    Total                      5.803ns (3.693ns logic, 2.110ns route)
+                                       (63.6% logic, 36.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 12 / 10
+-------------------------------------------------------------------------
+Offset:              7.797ns (Levels of Logic = 2)
+  Source:            state_FSM_FFd3 (FF)
+  Destination:       Sout (PAD)
+  Source Clock:      clk rising
+
+  Data Path: state_FSM_FFd3 to Sout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             32   0.591   1.405  state_FSM_FFd3 (state_FSM_FFd3)
+     LUT3:I0->O            5   0.648   0.633  state_FSM_Out111 (Sout_OBUF)
+     OBUF:I->O                 4.520          Sout_OBUF (Sout)
+    ----------------------------------------
+    Total                      7.797ns (5.759ns logic, 2.038ns route)
+                                       (73.9% logic, 26.1% route)
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 
 =========================================================================
 
 
+<<<<<<< HEAD
 Total REAL time to Xst completion: 15.00 secs
 Total CPU time to Xst completion: 14.94 secs
  
 --> 
 
 Total memory usage is 4549820 kilobytes
+=======
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.86 secs
+ 
+--> 
+
+Total memory usage is 306672 kilobytes
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    7 (   0 filtered)

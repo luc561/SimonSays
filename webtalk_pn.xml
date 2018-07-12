@@ -3,11 +3,19 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD
 <application name="pn" timeStamp="Thu Jul 12 05:04:51 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="73C3829FB757459CB63F22BA9CD1DC25" type="project"/>
 <property name="ProjectIteration" value="51" type="project"/>
 <property name="ProjectFile" value="C:/Users/DWWW/Downloads/SimonSays-master/SimonSays.xise" type="project"/>
+=======
+<application name="pn" timeStamp="Wed Jul 11 17:49:26 2018">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="73C3829FB757459CB63F22BA9CD1DC25" type="project"/>
+<property name="ProjectIteration" value="39" type="project"/>
+<property name="ProjectFile" value="C:/Users/Krist/Documents/FPGA Projects/SimonSays-master/SimonSays.xise" type="project"/>
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 <property name="ProjectCreationTimestamp" value="2018-06-21T21:53:56" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -25,7 +33,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2018-06-21T21:53:56" type="design"/>
 <property name="PROP_intWbtProjectID" value="73C3829FB757459CB63F22BA9CD1DC25" type="design"/>
+<<<<<<< HEAD
 <property name="PROP_intWbtProjectIteration" value="51" type="process"/>
+=======
+<property name="PROP_intWbtProjectIteration" value="39" type="process"/>
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lockPinsUcfFile" value="changed" type="process"/>

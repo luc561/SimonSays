@@ -1,7 +1,11 @@
-#Release 14.7 - par P.20131013 (nt64)
+#Release 14.7 - par P.20131013 (nt)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
+<<<<<<< HEAD
 #Thu Jul 12 05:05:02 2018
+=======
+#Wed Jul 11 17:49:31 2018
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -138,8 +142,13 @@ P116,SevenD<1>,IOB,IO_L04N_0,OUTPUT,LVTTL,0,8,FAST,NONE**,,,LOCATED,NO,NONE,
 P117,SevenD<0>,IOB,IO_L03N_0,OUTPUT,LVTTL,0,8,FAST,NONE**,,,LOCATED,NO,NONE,
 P118,,,GND,,,,,,,,,,,,
 P119,,,VCCO_0,,,0,,,,,3.30,,,,
+<<<<<<< HEAD
 P120,Seven_Segment_Enable<1>,IOB,IO_L05P_0,OUTPUT,LVTTL,0,8,FAST,NONE**,,,LOCATED,NO,NONE,
 P121,Seven_Segment_Enable<0>,IOB,IO_L05N_0,OUTPUT,LVTTL,0,8,FAST,NONE**,,,LOCATED,NO,NONE,
+=======
+P120,Enable1,IOB,IO_L05P_0,OUTPUT,LVTTL,0,8,FAST,NONE**,,,LOCATED,NO,NONE,
+P121,Enable2,IOB,IO_L05N_0,OUTPUT,LVTTL,0,8,FAST,NONE**,,,LOCATED,NO,NONE,
+>>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 P122,,,VCCINT,,,,,,,,1.2,,,,
 P123,,IBUF,IP_0/VREF_0,UNUSED,,0,,,,,,,,,
 P124,,DIFFMTB,IO_L06P_0/GCLK4,UNUSED,,0,,,,,,,,,
