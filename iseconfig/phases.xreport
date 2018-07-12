@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-07-09T10:54:37</DateModified>
+  <DateModified>2018-07-12T04:48:35</DateModified>
   <ModuleName>phases</ModuleName>
-  <SummaryTimeStamp>2018-07-09T10:49:00</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/DWWW/Documents/Embedded Work/SimonSays/iseconfig/phases.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/DWWW/Documents/Embedded Work/SimonSays\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2018-07-12T04:43:13</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/DWWW/Downloads/SimonSays-master/iseconfig/phases.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/DWWW/Downloads/SimonSays-master\</ImplementationReportsDirectory>
   <DateInitialized>2018-06-21T22:00:13</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

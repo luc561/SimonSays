@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Jul 09 12:04:51 2018
+// Written by: Map P.20131013 on Thu Jul 12 05:04:44 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -7,19 +7,20 @@ COMP "SevenD<5>" LOCATE = SITE "P111" LEVEL 1;
 COMP "SevenD<6>" LOCATE = SITE "P110" LEVEL 1;
 COMP "SevenD<7>" LOCATE = SITE "P114" LEVEL 1;
 COMP "clk" LOCATE = SITE "P129" LEVEL 1;
+COMP "SevenD<3>" LOCATE = SITE "P113" LEVEL 1;
+COMP "SevenD<0>" LOCATE = SITE "P117" LEVEL 1;
 COMP "Sout" LOCATE = SITE "P55" LEVEL 1;
-COMP "Enable1" LOCATE = SITE "P120" LEVEL 1;
 COMP "reset" LOCATE = SITE "P80" LEVEL 1;
 COMP "button1" LOCATE = SITE "P79" LEVEL 1;
 COMP "button2" LOCATE = SITE "P78" LEVEL 1;
 COMP "button3" LOCATE = SITE "P77" LEVEL 1;
 COMP "button4" LOCATE = SITE "P76" LEVEL 1;
+COMP "Seven_Segment_Enable<0>" LOCATE = SITE "P121" LEVEL 1;
 COMP "button5" LOCATE = SITE "P75" LEVEL 1;
-COMP "SevenD<0>" LOCATE = SITE "P117" LEVEL 1;
+COMP "Seven_Segment_Enable<1>" LOCATE = SITE "P120" LEVEL 1;
 COMP "SevenD<1>" LOCATE = SITE "P116" LEVEL 1;
 COMP "SevenD<2>" LOCATE = SITE "P115" LEVEL 1;
-COMP "SevenD<3>" LOCATE = SITE "P113" LEVEL 1;
 COMP "SevenD<4>" LOCATE = SITE "P112" LEVEL 1;
-NET "clk_BUFGP/IBUFG" PERIOD = 1000 ns HIGH 50%;
+NET "clk_BUFGP/IBUFG" PERIOD = 8.33333333 ns HIGH 50%;
 SCHEMATIC END;
 
