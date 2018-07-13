@@ -36,29 +36,21 @@ entity phases is
            button3 : in  STD_LOGIC;
            button4 : in  STD_LOGIC;
            button5 : in  STD_LOGIC;
+			  DIPSW : in STD_LOGIC_VECTOR (3 downto 0);
 			  clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
-<<<<<<< HEAD
            Seven_Segment_Enable : out  STD_LOGIC_VECTOR (1 downto 0);
 			  SevenD : out  STD_LOGIC_VECTOR (7 downto 0);
 			  Sout : out STD_LOGIC);
-=======
-           Enable1 : out  STD_LOGIC;
-			  Enable2 : out  STD_LOGIC;
-           SevenD : out  STD_LOGIC_VECTOR (7 downto 0);
-			SD : out  STD_LOGIC_VECTOR (7 downto 0);
-		
-			Sout : out STD_LOGIC);
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 end phases;
 
 		
 architecture Behavioral of phases is
 
 
-type statetype is (preone, pretwo, prethree, zero, one, two, win, over, zerowaitstate, onewaitstate,twowaitstate);
+type statetype is (preone, pretwo, prethree, prefour, zero, one, two, three, win, over, zerowaitstate, onewaitstate, twowaitstate, threewaitstate);
 signal refresh_clk : std_logic := '1';
-signal state, nextstate: statetype;
+signal state: statetype;
 signal digit_sel : unsigned(1 downto 0);
 signal bcd : integer := 0;
 signal Seven_Segment_Display_output : std_logic_vector (7 downto 0) := (others => '0');
@@ -68,7 +60,7 @@ begin
 
 --state register
 
-process(clk, reset, button1, button2, button3, button4, button5) 
+process(clk, reset, button1, button2, button3, button4, button5, DIPSW) 
 variable i:integer:=0; 
 variable refresh_count : integer :=0; 
 begin
@@ -83,21 +75,15 @@ if refresh_count = 1200 then
 	else
 	refresh_count := refresh_count + 1;
 end if;
-  
+-------Level 1 -----------  
+if DIPSW = "0001" then
 case (state) is
 when preone =>
 bcd0 <= 0;
 bcd1 <= 1;
 if i<12500000 then
 i:=i+1;
-<<<<<<< HEAD
 elsif i=12500000 then
-=======
-elsif i= 5000000 then
-Enable1 <= '0';
-Enable2 <= '1';
-SevenD <= "11111001";
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 state <= pretwo;
 i:=0;
 end if;
@@ -108,14 +94,7 @@ bcd0 <= 0;
 bcd1 <= 2;
 if i<12500000 then
 i:=i+1;
-<<<<<<< HEAD
 elsif i=12500000 then
-=======
-elsif i=5000000 then
-Enable1 <= '0';
-Enable2 <= '1';
-SevenD <= "10100100";
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 state <= prethree;
 i:=0;
 end if;
@@ -126,97 +105,25 @@ bcd0 <= 0;
 bcd1 <= 3;
 if i<12500000 then
 i:=i+1;
-<<<<<<< HEAD
 elsif i=12500000 then
 state <=zero;
-=======
-elsif i=5000000 then
-Enable1 <= '0';
-Enable2 <= '1';
-SevenD <= "10110000";
-state <=clear;
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 i:=0;
 end if;
 
+when prefour =>
+when three =>
 
-<<<<<<< HEAD
 when zero =>
 bcd0 <= 6;
 bcd1 <= 0;
-=======
-when clear =>
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable2 <= '0';
-Enable1 <= '1';
-SevenD <= "10000010";
-i:=0;
-end if;
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable2 <= '1';
-Enable1 <= '0';
-SevenD <= "11000000";
-i:=0;
-end if;
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable1 <= '1';  
-i:=0;
-end if;
-state  <=zero;
-
-
-when zero =>
-Enable2 <= '0';
-Enable1 <= '1';
-SevenD <= "10000010";
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable2 <= '1';
-Enable1 <= '0';
-SevenD <= "11000000";
-i:=0;
-end if;
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-i:=0;
-end if;
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 if(button1 ='0') then state<=zerowaitstate;
-elsif(button2='0') or (button3='0')then state<=over;
+elsif(button2='0') or (button3='0') or (button4='0')or (button5='0')then state<=over;
 elsif(button1='1') then state<=zero;
 end if;
 
 when zerowaitstate =>
-<<<<<<< HEAD
 bcd0 <= 6;
 bcd1 <= 0;
-=======
-Enable2 <= '0';
-Enable1 <= '1';
-SevenD <= "10000010";
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable2 <= '1';
-Enable1 <= '0';
-SevenD <= "11000000";
-i:=0;
-end if;
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable1 <= '1'; 
-i:=0;
-end if;
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 if(button1 ='1') then state<=one;
 else
 state <=zerowaitstate;
@@ -224,56 +131,16 @@ end if;
 
 
 when one =>
-<<<<<<< HEAD
 bcd0 <= 6;
 bcd1 <= 0;
-=======
-Enable2 <= '0';
-Enable1 <= '1';
-SevenD <= "10000010";
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable2 <= '1';
-Enable1 <= '0';
-SevenD <= "11000000";
-i:=0;
-end if;
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable1 <= '1'; 
-i:=0;
-end if;
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 if(button2='0') then state<=onewaitstate;
-elsif(button3='0') or (button1 ='0')then state<=over;
+elsif(button3='0') or (button1 ='0') or (button4='0')or (button5='0')then state<=over;
 elsif (button2='1') then state<=one;
 end if;
 
 when onewaitstate =>
-<<<<<<< HEAD
 bcd0 <= 6;
 bcd1 <= 0;
-=======
-Enable2 <= '0';
-Enable1 <= '1';
-SevenD <= "10000010";
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable2 <= '1';
-Enable1 <= '0';
-SevenD <= "11000000";
-i:=0;
-end if;
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable1 <= '1'; 
-i:=0;
-end if;
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 if(button2 ='1') then state<=two;
 else
 state <=onewaitstate;
@@ -281,93 +148,174 @@ end if;
 
 
 when two =>
-<<<<<<< HEAD
 bcd0 <= 6;
 bcd1 <= 0;
-=======
-Enable2 <= '0';
-Enable1 <= '1';
-SevenD <= "10000010";
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable2 <= '1';
-Enable1 <= '0';
-SevenD <= "11000000";
-i:=0;
-end if;
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable1 <= '1'; 
-i:=0;
-end if;
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 if(button3='0') then state<=twowaitstate;
-elsif(button2='0') or (button1='0')then state<=over;
+elsif(button2='0') or (button1='0') or (button4='0') or (button5='0')then state<=over;
 elsif (button3='1') then state<=two;
 end if;
 
 when twowaitstate =>
-<<<<<<< HEAD
 bcd0 <= 6;
 bcd1 <= 0;
-=======
-Enable2 <= '0';
-Enable1 <= '1';
-SevenD <= "10000010";
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable2 <= '1';
-Enable1 <= '0';
-SevenD <= "11000000";
-i:=0;
-end if;
-if i<5000000 then
-i:=i+1;
-elsif i=5000000 then
-Enable1 <= '1'; 
-i:=0;
-end if;
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 if(button3='1') then state<=win;
 else
 state <=twowaitstate;
 end if;
 
+when threewaitstate =>
+
+
 when over =>
-<<<<<<< HEAD
 bcd0 <= 9;
 bcd1 <= 9;
-=======
-Enable1 <= '0';
-Enable2 <= '0';
-SevenD <= "10001001";
-
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 state <= over;
 
 
 when win =>
-<<<<<<< HEAD
 bcd0 <= 8;
 bcd1 <= 8;
-=======
-Enable1 <= '0';
-Enable2 <= '0';
-SevenD <= "11100011";
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 state <= win;
-
-
-
-
 end case;
+
+
+
+------End of Level 1-----
+------Level 2--------
+elsif DIPSW = "0010" then
+
+case (state) is
+when preone =>
+bcd0 <= 0;
+bcd1 <= 2;
+if i<10000000 then
+i:=i+1;
+elsif i=10000000 then
+state <= pretwo;
+i:=0;
+end if;
+
+
+when pretwo =>
+bcd0 <= 0;
+bcd1 <= 1;
+if i<10000000 then
+i:=i+1;
+elsif i=10000000 then
+state <= prethree;
+i:=0;
+end if;
+
+
+when prethree =>
+bcd0 <= 0;
+bcd1 <= 3;
+if i<10000000 then
+i:=i+1;
+elsif i=10000000 then
+state <=prefour;
+i:=0;
+end if;
+
+when prefour =>
+bcd0 <= 0;
+bcd1 <= 2;
+if i<10000000 then
+i:=i+1;
+elsif i=10000000 then
+state <=zero;
+i:=0;
+end if;
+
+when zero =>
+bcd0 <= 6;
+bcd1 <= 0;
+if(button2 ='0') then state<=zerowaitstate;
+elsif(button1='0') or (button3='0') or (button4='0') or (button5='0')then state<=over;
+elsif(button2='1') then state<=zero;
+end if;
+
+when zerowaitstate =>
+bcd0 <= 6;
+bcd1 <= 0;
+if(button2 ='1') then state<=one;
+else
+state <=zerowaitstate;
+end if;
+
+
+when one =>
+bcd0 <= 6;
+bcd1 <= 0;
+if(button1='0') then state<=onewaitstate;
+elsif(button3='0') or (button2 ='0') or (button4 ='0') or (button5 ='0')then state<=over;
+elsif (button1='1') then state<=one;
+end if;
+
+when onewaitstate =>
+bcd0 <= 6;
+bcd1 <= 0;
+if(button1 ='1') then state<=two;
+else
+state <=onewaitstate;
+end if;
+
+
+when two =>
+bcd0 <= 6;
+bcd1 <= 0;
+if(button3='0') then state<=twowaitstate;
+elsif(button2='0') or (button1='0') or (button4 ='0') or (button5 ='0') then state<=over;
+elsif (button3='1') then state<=two;
+end if;
+
+when twowaitstate =>
+bcd0 <= 6;
+bcd1 <= 0;
+if(button3='1') then state<=three;
+else
+state <=twowaitstate;
+end if;
+
+
+
+
+when three =>
+bcd0 <= 6;
+bcd1 <= 0;
+if(button2='0') then state<=threewaitstate;
+elsif(button1='0') or (button3='0') or (button4 ='0') or (button5 ='0') then state<=over;
+elsif (button2='1') then state<=three;
+end if;
+
+when threewaitstate =>
+bcd0 <= 6;
+bcd1 <= 0;
+if(button2='1') then state<=win;
+else
+state <=threewaitstate;
+end if;
+
+
+when over =>
+bcd0 <= 9;
+bcd1 <= 9;
+state <= over;
+
+
+when win =>
+bcd0 <= 8;
+bcd1 <= 8;
+state <= win;
+end case;
+
+
+
+------End of Level 2-----
+
+end if;
 end if;
 end process;
-
-
 process(refresh_clk) --period of clk is 0.0001 seconds.
 
 begin

@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<document OS="nt" product="ISE" version="14.7">
+<document OS="nt64" product="ISE" version="14.7">
 
   <!--The data in this file is primarily intended for consumption by Xilinx tools.
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-<<<<<<< HEAD
   <application stringID="Map" timeStamp="Thu Jul 12 05:04:45 2018">
-=======
-  <application stringID="Map" timeStamp="Wed Jul 11 17:49:24 2018">
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt;C:\Xilinx\14.7\ISE_DS\common\lib\nt;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\nodejs\;C:\Program Files\Git\cmd;C:\TDM-GCC-64\bin;C:\Program Files\MATLAB\R2017a\runtime\win64;C:\Program Files\MATLAB\R2017a\bin;C:\Program Files\PuTTY\;C:\Users\Krist\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\12.0\DLLShared\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\MATLAB\R2016a\runtime\win64;C:\Program Files\MATLAB\R2016a\bin;C:\Program Files\MATLAB\R2016a\polyspace\bin;C:\python27\scripts;c:\python27;C:\Program Files\PuTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Users\DWWW\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\DWWW\AppData\Local\Programs\Python\Python36-32\;&quot;C:\Users\DWWW\AppData\Local\Microsoft\WindowsApps;&quot;;C:\Users\DWWW\AppData\Local\Microsoft\WindowsApps"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -43,13 +39,13 @@
         <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
         <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
       </item>
-      <item stringID="User_EnvHost" value="LAPTOP-O6VFEAQH"/>
+      <item stringID="User_EnvHost" value="Pierres"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz"/>
-          <item stringID="speed" value="2592 MHz"/>
+          <item stringID="arch" value="Intel(R) Pentium(R) CPU B940 @ 2.00GHz"/>
+          <item stringID="speed" value="1995 MHz"/>
         </row>
       </table>
     </section>
@@ -73,7 +69,6 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="2"/>
-<<<<<<< HEAD
         <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="4556188"/>
         <item stringID="MAP_TOTAL_REAL_TIME" value="4 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="3 secs "/>
@@ -84,18 +79,6 @@
           <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="68"/>
         </item>
         <item AVAILABLE="704" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="107">
-=======
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="296492"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="2 secs "/>
-        <item stringID="MAP_TOTAL_CPU_TIME" value="2 secs "/>
-      </section>
-      <section stringID="MAP_SLICE_REPORTING">
-        <item AVAILABLE="1408" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="45"/>
-        <item AVAILABLE="1408" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="537">
-          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="35"/>
-        </item>
-        <item AVAILABLE="704" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="276">
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
           <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
         </item>
       </section>
@@ -135,11 +118,7 @@
             <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
           </row>
           <row stringID="row" value="2">
-<<<<<<< HEAD
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;1>"/>
-=======
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Enable2"/>
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
@@ -149,11 +128,7 @@
             <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
           </row>
           <row stringID="row" value="3">
-<<<<<<< HEAD
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;2>"/>
-=======
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;0>"/>
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
@@ -163,11 +138,7 @@
             <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
           </row>
           <row stringID="row" value="4">
-<<<<<<< HEAD
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;3>"/>
-=======
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;1>"/>
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
@@ -177,11 +148,7 @@
             <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
           </row>
           <row stringID="row" value="5">
-<<<<<<< HEAD
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;4>"/>
-=======
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;2>"/>
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
@@ -191,11 +158,7 @@
             <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
           </row>
           <row stringID="row" value="6">
-<<<<<<< HEAD
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;5>"/>
-=======
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;3>"/>
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
@@ -205,11 +168,7 @@
             <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
           </row>
           <row stringID="row" value="7">
-<<<<<<< HEAD
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;6>"/>
-=======
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;4>"/>
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
@@ -219,11 +178,7 @@
             <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
           </row>
           <row stringID="row" value="8">
-<<<<<<< HEAD
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;7>"/>
-=======
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;5>"/>
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
@@ -233,11 +188,7 @@
             <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
           </row>
           <row stringID="row" value="9">
-<<<<<<< HEAD
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Seven_Segment_Enable&lt;0>"/>
-=======
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;6>"/>
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
@@ -247,11 +198,7 @@
             <item label="Suspend" stringID="SUSPEND" value="3STATE"/>
           </row>
           <row stringID="row" value="10">
-<<<<<<< HEAD
             <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="Seven_Segment_Enable&lt;1>"/>
-=======
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="SevenD&lt;7>"/>
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="OUTPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
@@ -329,11 +276,7 @@
       </section>
       <section stringID="MAP_RPM_MACROS">
         <section stringID="MAP_SHAPE_SECTION">
-<<<<<<< HEAD
           <item dataType="int" stringID="MAP_NUM_SHAPE" value="5"/>
-=======
-          <item dataType="int" stringID="MAP_NUM_SHAPE" value="15"/>
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
         </section>
       </section>
       <section stringID="MAP_GUIDE_REPORT"/>

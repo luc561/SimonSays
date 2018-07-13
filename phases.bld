@@ -1,31 +1,20 @@
-Release 14.7 ngdbuild P.20131013 (nt)
+Release 14.7 ngdbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
-ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 phases.ngc
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc simon.ucf -p xc3s50a-tq144-4 phases.ngc
 phases.ngd
 
-<<<<<<< HEAD
 Reading NGO file "C:/Users/DWWW/Downloads/SimonSays-master/phases.ngc" ...
-=======
-Reading NGO file "C:/Users/Krist/Documents/FPGA
-Projects/SimonSays-master/phases.ngc" ...
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file "simon.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
-<<<<<<< HEAD
 INFO:ConstraintSystem - The Period constraint <PERIOD = 120 MHz;>
    [simon.ucf(2)], is specified using the Net Period method which is not
    recommended. Please use the Timespec PERIOD method.
-=======
-INFO:ConstraintSystem - The Period constraint <PERIOD = 2 MHz;> [simon.ucf(2)],
-   is specified using the Net Period method which is not recommended. Please use
-   the Timespec PERIOD method.
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 
 Done...
 
@@ -42,18 +31,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-<<<<<<< HEAD
 Total memory usage is 4419212 kilobytes
 
 Writing NGD file "phases.ngd" ...
 Total REAL time to NGDBUILD completion:  8 sec
 Total CPU time to NGDBUILD completion:   8 sec
-=======
-Total memory usage is 188836 kilobytes
-
-Writing NGD file "phases.ngd" ...
-Total REAL time to NGDBUILD completion:  2 sec
-Total CPU time to NGDBUILD completion:   2 sec
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 
 Writing NGDBUILD log file "phases.bld"...

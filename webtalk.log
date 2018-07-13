@@ -4,11 +4,7 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 Project Information
 --------------------
 ProjectID=73C3829FB757459CB63F22BA9CD1DC25
-<<<<<<< HEAD
 ProjectIteration=51
-=======
-ProjectIteration=39
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
 
 WebTalk Summary
 ----------------
@@ -17,8 +13,4 @@ INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
 INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
-<<<<<<< HEAD
 INFO:WebTalk:5 - C:/Users/DWWW/Downloads/SimonSays-master/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html
-=======
-INFO:WebTalk:5 - C:/Users/Krist/Documents/FPGA Projects/SimonSays-master/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html
->>>>>>> 75e2274b1eff6982f846f7a3d6e9fb40607fbf1b
